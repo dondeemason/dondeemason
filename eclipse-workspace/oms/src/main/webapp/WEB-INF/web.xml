@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>oms</display-name>
+  
+  <servlet>
+  	<servlet-name>authcontroller</servlet-name>
+  	<servlet-class>com.oms.controller.AuthController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>authcontroller</servlet-name>
+  	<url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>/pages/landingpage.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>checksessioncontroller</servlet-name>
+  	<servlet-class>com.oms.controller.CheckSessionController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>checksessioncontroller</servlet-name>
+  	<url-pattern>/checksessioncontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>addnewusercontroller</servlet-name>
+  	<servlet-class>com.oms.controller.AddNewUserController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addnewusercontroller</servlet-name>
+  	<url-pattern>/addnewusercontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>forgotpasswordcontroller</servlet-name>
+  	<servlet-class>com.oms.controller.ForgotPasswordController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>forgotpasswordcontroller</servlet-name>
+  	<url-pattern>/forgotpasswordcontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>disableusercontroller</servlet-name>
+  	<servlet-class>com.oms.controller.DisableUserController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>disableusercontroller</servlet-name>
+  	<url-pattern>/disableusercontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>viewallusercontroller</servlet-name>
+  	<servlet-class>com.oms.controller.ViewAllUsersController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>viewallusercontroller</servlet-name>
+  	<url-pattern>/viewallusercontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>logoutcontroller</servlet-name>
+  	<servlet-class>com.oms.controller.LogoutController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>logoutcontroller</servlet-name>
+  	<url-pattern>/logoutcontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>editusercontroller</servlet-name>
+  	<servlet-class>com.oms.controller.EditUserController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>editusercontroller</servlet-name>
+  	<url-pattern>/editusercontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>editprofilecontroller</servlet-name>
+  	<servlet-class>com.oms.controller.EditProfileController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>editprofilecontroller</servlet-name>
+  	<url-pattern>/editprofilecontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>addnewproductcontroller</servlet-name>
+  	<servlet-class>com.oms.controller.product.AddNewProductController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addnewproductcontroller</servlet-name>
+  	<url-pattern>/addnewproductcontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>editproductcontroller</servlet-name>
+  	<servlet-class>com.oms.controller.product.EditProductController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>editproductcontroller</servlet-name>
+  	<url-pattern>/editproductcontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>viewallproductcontroller</servlet-name>
+  	<servlet-class>com.oms.controller.product.ViewAllProductsController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>viewallproductcontroller</servlet-name>
+  	<url-pattern>/viewallproductcontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>viewallordertakercontroller</servlet-name>
+  	<servlet-class>com.oms.controller.order.ViewAllOrderTakerController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>viewallordertakercontroller</servlet-name>
+  	<url-pattern>/viewallordertakercontroller</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>viewallproductcustomercontroller</servlet-name>
+  	<servlet-class>com.oms.controller.customer.ViewAllProductCustomerController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>viewallproductcustomercontroller</servlet-name>
+  	<url-pattern>/viewallproductcustomercontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>viewordersummarycontroller</servlet-name>
+  	<servlet-class>com.oms.controller.report.ViewOrderSummaryController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>viewordersummarycontroller</servlet-name>
+  	<url-pattern>/viewordersummarycontroller</url-pattern>
+  </servlet-mapping>
+  
+  <!-- <servlet>
+  	<servlet-name>viewcustomersummarycontroller</servlet-name>
+  	<servlet-class>com.oms.controller.report.ViewCustomerSummaryController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>viewcustomersummarycontroller</servlet-name>
+  	<url-pattern>/viewcustomersummarycontroller</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet>
+  	<servlet-name>viewexpectedorders</servlet-name>
+  	<servlet-class>com.oms.controller.ViewExpectedOrders</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>viewexpectedorders</servlet-name>
+  	<url-pattern>/viewexpectedorders</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>viewallproductsforproduction</servlet-name>
+  	<servlet-class>com.oms.controller.ViewAllProductsForProduction</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>viewallproductsforproduction</servlet-name>
+  	<url-pattern>/viewallproductsforproduction</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+  	<servlet-name>addnewproductquantitiescontroller</servlet-name>
+  	<servlet-class>com.oms.controller.AddNewProductQuantitiesController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>addnewproductquantitiescontroller</servlet-name>
+  	<url-pattern>/addnewproductquantitiescontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>editorderstatuscontroller</servlet-name>
+  	<servlet-class>com.oms.controller.order.EditOrderStatusController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>editorderstatuscontroller</servlet-name>
+  	<url-pattern>/editorderstatuscontroller</url-pattern>
+  </servlet-mapping>
+
+</web-app>
